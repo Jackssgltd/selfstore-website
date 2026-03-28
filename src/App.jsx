@@ -78,7 +78,7 @@ function PhotoCard({ label, src = null, tall = false, dark = false, showLabel = 
       ) : null}
 
       <div className="relative flex h-full w-full items-end p-5">
-        <{showLabel ? (
+        {showLabel ? (
   <div className="relative flex h-full w-full items-end p-5">
     <div className={`rounded-2xl px-4 py-3 text-sm font-medium shadow-sm ${dark ? "bg-white/10 text-white backdrop-blur" : "bg-white/85 text-zinc-700"}`}>
       {label}
