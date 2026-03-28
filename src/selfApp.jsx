@@ -727,7 +727,7 @@ export default function WebsiteStarter() {
       <footer className="border-t border-zinc-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-zinc-500 md:flex-row md:items-center md:justify-between">
           <div>© 2026 SelfStore Group LTD. All rights reserved.</div>
-          <div>Multi-page redesign with gallery, ready for your Storeganise links and final content.</div>
+          <div></div>
         </div>
       </footer>
     </div>
