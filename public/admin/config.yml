@@ -2,7 +2,8 @@ backend:
   name: github
   repo: jackssgltd/selfstore-website
   branch: main
-  
+  base_url: "https://YOUR-RAILWAY-PROJECT.up.railway.app"
+  auth_endpoint: /auth
 
 media_folder: "public/images"
 public_folder: "/images"
