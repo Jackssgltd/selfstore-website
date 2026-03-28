@@ -643,7 +643,7 @@ export default function WebsiteStarter() {
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
           <div className="flex items-center justify-between gap-4">
             <button onClick={() => goToPage("home")} className="flex min-w-0 items-center gap-3 text-left">
-              < = <img src="/logo.png" alt="SelfStore Group logo" className="h-14 w-auto shrink-0 object-contain" />
+              <img src="/logo.png" alt="SelfStore Group logo" className="h-14 w-auto shrink-0 object-contain" />
               <div className="min-w-0">
                 <div className="truncate text-base font-semibold tracking-tight sm:text-lg">SelfStore Group</div>
                 <div className="text-[10px] uppercase tracking-[0.18em] text-zinc-500 sm:text-xs">Manchester self storage</div>
