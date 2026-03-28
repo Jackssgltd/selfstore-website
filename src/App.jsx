@@ -577,8 +577,8 @@ export default function WebsiteStarter() {
                 <h3 className="mt-3 text-2xl font-semibold tracking-tight">Customer portal flow</h3>
                 <p className="mt-3 text-sm leading-7 text-zinc-600">This section gives customers a clear route into your Storeganise journey. The website acts as the marketing front-end, while Storeganise handles account login, booking, and customer management.</p>
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                  <a href="https://www.selfstoregroup.co.uk/sites" className="rounded-2xl bg-[color:var(--brand)] px-5 py-4 text-center text-sm font-semibold text-white shadow-sm transition hover:opacity-90">Start Booking Flow</a>
-                  <a href="https://www.selfstoregroup.co.uk/account/login" className="rounded-2xl border border-zinc-300 px-5 py-4 text-center text-sm font-semibold transition hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]">Customer Login</a>
+                  <a href="https://book.selfstoregroup.co.uk/sites" className="rounded-2xl bg-[color:var(--brand)] px-5 py-4 text-center text-sm font-semibold text-white shadow-sm transition hover:opacity-90">Start Booking Flow</a>
+                  <a href="https://login.selfstoregroup.co.uk/account/login" className="rounded-2xl border border-zinc-300 px-5 py-4 text-center text-sm font-semibold transition hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]">Customer Login</a>
                 </div>
               </div>
             </div>
@@ -670,13 +670,13 @@ export default function WebsiteStarter() {
                 })}
               </nav>
               <a
-  href="https://www.selfstoregroup.co.uk/account/login"
+  href="https://login.selfstoregroup.co.uk/account/login"
   className="rounded-2xl border border-zinc-300 px-4 py-2 text-sm font-medium transition hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]"
 >
   Customer Login
 </a>
 <a
-  href="https://www.selfstoregroup.co.uk/sites"
+  href="https://book.selfstoregroup.co.uk/sites"
   className="rounded-2xl bg-[color:var(--brand)] px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
 >
   Book Now
@@ -685,14 +685,14 @@ export default function WebsiteStarter() {
 
             <div className="flex items-center gap-2 lg:hidden">
               <a
-    href="https://www.selfstoregroup.co.uk/account/login"
+    href="https://login.selfstoregroup.co.uk/account/login"
     className="rounded-xl border border-zinc-300 px-3 py-2 text-xs font-semibold transition hover:border-[color:var(--brand)] hover:text-[color:var(--brand)] sm:px-4 sm:text-sm"
   >
     Login
   </a>
 
   <a
-    href="https://www.selfstoregroup.co.uk/sites"
+    href="https://book.selfstoregroup.co.uk/sites"
     className="rounded-xl bg-[color:var(--brand)] px-3 py-2 text-xs font-semibold text-white shadow-sm transition hover:opacity-90 sm:px-4 sm:text-sm"
   >
     Book Now
