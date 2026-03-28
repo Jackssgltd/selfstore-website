@@ -57,7 +57,7 @@ const PHOTO_SLOTS = {
   lockDoor: "/images/lock-door.jpg"
 };
 
-function PhotoCard({ label, src = null, tall = false, dark = false }) {
+function PhotoCard({ label, src = null, tall = false, dark = false, showLabel = true }) {
   return (
     <div className={`relative overflow-hidden rounded-[1.5rem] border border-zinc-200 ${tall ? "aspect-[4/5]" : "aspect-[16/10]"}`}>
       <div className={`absolute inset-0 ${dark ? "bg-gradient-to-br from-zinc-800 via-zinc-700 to-zinc-900" : "bg-gradient-to-br from-[color:var(--brand)]/15 via-zinc-100 to-zinc-200"}`} />
@@ -78,9 +78,13 @@ function PhotoCard({ label, src = null, tall = false, dark = false }) {
       ) : null}
 
       <div className="relative flex h-full w-full items-end p-5">
-        <div className={`rounded-2xl px-4 py-3 text-sm font-medium shadow-sm ${dark ? "bg-white/10 text-white backdrop-blur" : "bg-white/85 text-zinc-700"}`}>
-          {label}
-        </div>
+        <{showLabel ? (
+  <div className="relative flex h-full w-full items-end p-5">
+    <div className={`rounded-2xl px-4 py-3 text-sm font-medium shadow-sm ${dark ? "bg-white/10 text-white backdrop-blur" : "bg-white/85 text-zinc-700"}`}>
+      {label}
+    </div>
+  </div>
+) : null}
       </div>
     </div>
   );
@@ -305,13 +309,13 @@ export default function WebsiteStarter() {
               </div>
               <div className="grid gap-4 lg:grid-cols-2">
                 <div className="rounded-[2rem] border border-zinc-200 bg-zinc-100 p-4 shadow-sm lg:col-span-2">
-                  <PhotoCard label="Main frontage photo" src={PHOTO_SLOTS.front} />
+                  <PhotoCard label="Main frontage photo" src={PHOTO_SLOTS.front} showLabel={false} />
                 </div>
                 <div className="rounded-[2rem] border border-zinc-200 bg-zinc-50 p-4 shadow-sm">
-                  <PhotoCard label="Downstairs corridor photo" src={PHOTO_SLOTS.downstairs} tall />
+                  <PhotoCard label="Downstairs corridor photo" src={PHOTO_SLOTS.downstairs} tall showLabel={false} />
                 </div>
                 <div className="rounded-[2rem] border border-zinc-200 bg-zinc-50 p-4 shadow-sm">
-                  <PhotoCard label="Goods lift photo" src={PHOTO_SLOTS.goodsLift} tall />
+                  <PhotoCard label="Goods lift photo" src={PHOTO_SLOTS.goodsLift} tall showLabel={false} />
                 </div>
               </div>
             </div>
@@ -467,7 +471,7 @@ export default function WebsiteStarter() {
         <section className="mx-auto max-w-7xl px-6 py-16 md:py-20">
           <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center">
             <div className="overflow-hidden rounded-[2rem] border border-zinc-200 shadow-sm">
-              <PhotoCard label="Main frontage photo" src={PHOTO_SLOTS.front} dark />
+              <PhotoCard label="Main frontage photo" src={PHOTO_SLOTS.front} dark showLabel={false} />
             </div>
             <div className="rounded-[2rem] border border-zinc-200 bg-zinc-950 p-8 text-white shadow-sm">
               <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[#ff7a5f]">Current location</div>
@@ -496,7 +500,7 @@ export default function WebsiteStarter() {
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {units.map((u) => (
               <div key={u.size} className="rounded-2xl border p-6 shadow-sm">
-                <PhotoCard label={`${u.size} sq ft unit`} src={u.image} />
+                <PhotoCard label={`${u.size} sq ft unit`} src={u.image} showLabel={false} />
                 <h3 className="mt-4 text-xl font-semibold">{u.size} sq ft</h3>
                 <p className="mt-2 text-lg font-bold text-[color:var(--brand)]">£{u.price} / month</p>
               </div>
@@ -643,7 +647,7 @@ export default function WebsiteStarter() {
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
           <div className="flex items-center justify-between gap-4">
             <button onClick={() => goToPage("home")} className="flex min-w-0 items-center gap-3 text-left">
-              <img src="/logo.png" alt="SelfStore Group logo" className="h-14 w-auto shrink-0 object-contain" />
+              <img src="/logo.png" alt="SelfStore Group logo" className="h-20 w-auto shrink-0 object-contain" />
               <div className="min-w-0">
                 <div className="truncate text-base font-semibold tracking-tight sm:text-lg">SelfStore Group</div>
                 <div className="text-[10px] uppercase tracking-[0.18em] text-zinc-500 sm:text-xs">Manchester self storage</div>
