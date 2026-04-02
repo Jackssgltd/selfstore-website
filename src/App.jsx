@@ -567,7 +567,7 @@ export default function WebsiteStarter() {
               <div className="rounded-[2rem] border border-zinc-200 bg-white p-8 shadow-sm">
                 <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--brand)]">Send an enquiry</div>
                 <h3 className="mt-3 text-2xl font-semibold tracking-tight">Contact form</h3>
-                <p className="mt-3 text-sm leading-7 text-zinc-600">This gives you a clean enquiry form on the page. When the site is deployed, this can be connected to your email inbox, a form service, or your CRM so enquiries come through properly.</p>
+                
                 <form className="mt-6 space-y-4">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <input type="text" placeholder="Full name" className="w-full rounded-2xl border border-zinc-300 px-4 py-3 text-sm outline-none transition focus:border-[color:var(--brand)]" />
@@ -581,7 +581,7 @@ export default function WebsiteStarter() {
               <div className="rounded-[2rem] border border-zinc-200 bg-zinc-50 p-8 shadow-sm">
                 <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--brand)]">Storeganise</div>
                 <h3 className="mt-3 text-2xl font-semibold tracking-tight">Customer portal flow</h3>
-                <p className="mt-3 text-sm leading-7 text-zinc-600">This section gives customers a clear route into your Storeganise journey. The website acts as the marketing front-end, while Storeganise handles account login, booking, and customer management.</p>
+                
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
                   <a href="https://book.selfstoregroup.co.uk/sites" className="rounded-2xl bg-[color:var(--brand)] px-5 py-4 text-center text-sm font-semibold text-white shadow-sm transition hover:opacity-90">Start Booking Flow</a>
                   <a href="https://book.selfstoregroup.co.uk/account/login" className="rounded-2xl border border-zinc-300 px-5 py-4 text-center text-sm font-semibold transition hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]">Customer Login</a>
