@@ -270,8 +270,10 @@ export default function WebsiteStarter() {
           <div>
             <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--brand)]">Contact</div>
             <div className="mt-5 space-y-2 text-sm text-zinc-700">
-              <div>+44 01614855454</div>
-              <div>Hello@selfstoregroup.co.uk</div>
+              <div><a href="tel:01614855454">0161 485 5454</a></div>
+              <div><a href="mailto:hello@selfstoregroup.co.uk">
+  hello@selfstoregroup.co.uk
+</a></div>
               <div>selfstoregroup.co.uk</div>
               <a href="https://share.google/nNsq7vwfRfPVCzdMz" target="_blank" rel="noreferrer" className="underline hover:text-[color:var(--brand)]">View Location</a>
             </div>
@@ -480,8 +482,10 @@ export default function WebsiteStarter() {
                 <div>Blackbrook Trading Estate</div>
                 <div>Weybrook Road, Stockport</div>
                 <div>M19 2QD</div>
-                <div>0161 485 5454</div>
-                <div>Hello@selfstoregroup.co.uk</div>
+                <div><a href="tel:01614855454">0161 485 5454</a></div>
+                <div><a href="mailto:hello@selfstoregroup.co.uk">
+  hello@selfstoregroup.co.uk
+</a></div>
               </div>
             </div>
           </div>
@@ -551,8 +555,10 @@ export default function WebsiteStarter() {
                   <p className="mt-4 max-w-md text-white/85">Get in touch with us to learn more.</p>
                 </div>
                 <div className="mt-10 space-y-4 text-base text-white/90">
-                  <div>+44 01614855454</div>
-                  <div>Hello@selfstoregroup.co.uk</div>
+                  <div><a href="tel:01614855454">0161 485 5454</a></div>
+                  <div><a href="mailto:hello@selfstoregroup.co.uk">
+  hello@selfstoregroup.co.uk
+</a></div>
                   <div>selfstoregroup.co.uk</div>
                 </div>
               </div>
