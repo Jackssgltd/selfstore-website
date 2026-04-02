@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: Jackssgltd/selfstore-website
+  repo: Jackssgltd/netlify-cms-github-oauth-provider
   branch: main
-  base_url: https://selfstore-website-production.up.railway.app
+  base_url: https://netlify-cms-github-oauth-provider-production-e2d2.up.railway.app
   auth_endpoint: /auth
 
 media_folder: "public/images"
